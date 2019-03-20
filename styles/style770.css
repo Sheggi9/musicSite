@@ -1,7 +1,7 @@
 @media screen and (max-width: 770px){
 	.b-page__line,.b-nav-menu{
 	    width: auto;
-	    margin: 0 auto;  
+	    margin: 0 auto;
 	}
 	.b-head__top-menu{
 		color:white;
@@ -119,8 +119,8 @@
 		text-align: center;
 		margin:0 5px;
 	}
-	
-	
+
+
 
 	.b-nav-menu{
 		height: auto;
@@ -216,7 +216,7 @@
 	.b-services-menu-body-types{
 		height: auto;
 	}
-	
+
 	.b-services-menu-body-types{
 		display: flex;
 		justify-content: center;
@@ -230,9 +230,8 @@
 		flex-direction: column;
 		justify-content: center;
 
-}
 	}
-
+	/**/
 	.b-info-bottom__news,.b-info-bottom__review{
 		width: auto;
 	}
@@ -334,12 +333,9 @@
 	}
 
 	#b-head-bottom-menu-search-form{
-	width: auto; 
+	width: auto;
 	height: 34px;
 	padding:0px 13px;
-	/*background-image: url(img/loupe-icon.png);
-	background-position: right;
-	background-repeat: no-repeat;*/
 	}
 
 	.b-head-bottom-menu-search{
@@ -348,10 +344,10 @@
 	}
 
 	#b-head-bottom-menu-search-button{
-	width: auto; 
+	width: auto;
 	height: 38px;
 	text-align: center;
-	}	
+	}
 
 	.b-head-bottom-menu-search-button{
 		display: flex;
@@ -369,12 +365,12 @@
 		display:none;
 	}
 	div.b-nav-menu-blocks_none{
-	display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 0;
-    width: 100%;
-    z-index: 50;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin: 0 0;
+		width: 100%;
+		z-index: 50;
 	}
 
 	div.b-nav-menu-blocks_none_1{
@@ -392,13 +388,143 @@
 	.search-form-red:focus {
     outline: 0;
     box-shadow: inset 0 1px 8px rgba(255,0,0,.075),0 0 8px rgba(255,0,0,.6);
-}
-.popopopopo,.dodododododod{
-
-	background-color: orange;
-	width: 50px;
-	height: 50px;
 	}
-	
-}
-}
+	/* Всплывающее окно */
+	#modal_form {
+		width: 260px;
+		height: 400px; /* Рaзмеры дoлжны быть фиксирoвaны */
+		border-radius: 25px;
+		border: 10px rgba(0,0,0,0.85) solid;
+		background: #fff;
+		position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+		top: 50%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+		left: 50%; /* пoлoвинa экрaнa слевa */
+		margin-top: -200px;
+		margin-left: -150px;
+		/* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+		display: none;
+		/* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+		opacity: 0;
+		/* пoлнoстью прoзрaчнo для aнимирoвaния */
+		z-index: 101;
+		/* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+		padding: 20px 10px;
+
+	}
+
+	#modal_form #modal_close {
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		cursor: pointer;
+		display: block;
+		border:4px solid rgba(0,0,0,0.85);
+		border-radius: 13px;
+		display: flex;
+		align-content: center;
+		align-items: center;
+		justify-content: center;
+		font-size: 12px;
+
+	}
+	#modal_close {
+		-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+	}
+
+	#modal_left-arrow, #modal_right-arrow{
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		cursor: pointer;
+		display: block;
+		border:4px solid rgba(0,0,0,0.85);
+		border-radius: 13px;
+		display: flex;
+		align-content: center;
+		align-items: center;
+		justify-content: center;
+		font-size: 15px;
+		top: 50%;
+		margin-top: -10px;
+		z-index: 10;
+		-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+
+	}
+	#modal_right-arrow{
+		right: 10px;
+	}
+	#modal_left-arrow{
+		left: 10px;
+	}
+
+
+	#overlay {
+		z-index:100;
+		/* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+		position:fixed;
+		/* всегдa перекрывaет весь сaйт */
+		background-color:#000; /* чернaя */
+		opacity:0.8;
+		/* нo немнoгo прoзрaчнa */
+		-moz-opacity:0.8;
+		/* фикс прозрачности для старых браузеров */
+		filter:alpha(opacity=80);
+		width:100%;
+		height:100%;
+		/* рaзмерoм вo весь экрaн */
+		top:0;
+		/* сверху и слевa 0, oбязaтельные свoйствa! */
+		left:0;
+		cursor:pointer;
+		display:none;
+		/* в oбычнoм сoстoянии её нет) */
+	}
+
+	.b-your-like-products{
+		height: 400px;
+		display:flex;
+		align-content: center;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.owl-nav .disabled{
+		display: none;
+	}
+
+
+	.b-your-like{
+		width: 260px;
+		height: 400px;
+		margin: 0 auto;
+	}
+
+	.b-product-nuber{
+		height: 380px;
+		padding: 10px;
+	}
+
+	.b-product__nuber{
+		flex: 1;
+		border: 1px solid #d0d0d0;
+	}
+
+	.product-img{
+		display:flex;
+		align-content: center;
+		align-items: center;
+		justify-content: center;
+		height: 340px;
+
+	}
+
+	.b-your-like__products{
+		width:260px;
+	}
+	}

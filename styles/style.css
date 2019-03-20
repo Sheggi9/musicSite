@@ -15,7 +15,7 @@ a{
 {
 
     width: 1200px;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
 
 .b-head__top-menu{
@@ -147,7 +147,7 @@ a{
 }
 
 #b-head-bottom-menu-search-form{
-	width: 347px; 
+	width: 347px;
 	height: 34px;
 	padding:0px 13px;
 	/*background-image: url(img/loupe-icon.png);
@@ -160,7 +160,7 @@ a{
 }
 
 #b-head-bottom-menu-search-button{
-	width: 154px; 
+	width: 154px;
 	height: 38px;
 	text-align: center;
 }
@@ -206,7 +206,7 @@ a.b-nav-menu-link__url_select{
 }
 
 .b-banner__text{
-    position:relative; 
+    position:relative;
     top:118px;
     left:630px;
     z-index:10;
@@ -220,7 +220,7 @@ a.b-nav-menu-link__url_select{
 	margin-top: -158px;
 	width:100%;
 	width: 1200px;
-	height: 460px; 
+	height: 460px;
 	display: flex;
   	align-items: center;
   	align-content: center;
@@ -243,7 +243,7 @@ a.b-nav-menu-link__url_select{
 /* .b-banner-img{
 	width: auto;
   	max-width: 1200px;
-	height: 460px; 
+	height: 460px;
 } */
 
 .b-banner-text__category{
@@ -276,7 +276,7 @@ a.b-nav-menu-link__url_select{
 .b-brend-menu-logo{
 	height: 110px;
 	display: flex;
-	
+
 }
 
 .b-brend-menu__arrow-left,.b-brend-menu__arrow-right{
@@ -395,7 +395,7 @@ a.b-brend-all-text__url{
 	color: #503737;
 	width:100%;
 	margin-top: 50px;
-	
+
 }
 
 .b-sale-menu__title{
@@ -441,7 +441,7 @@ a.b-brend-all-text__url{
 	align-items: center;
 	color:#444444;
 	border:1px solid #d0d0d0;
-	border-bottom: none; 
+	border-bottom: none;
 }
 
 
@@ -950,7 +950,7 @@ a.b-sale-menu-all-product__url,.b-sale-menu-subscribe__url{
 	text-decoration: underline;
 	line-height:22px;
 	color: red;
-	
+
 }
 
 .b-services-menu-body-types-card__img-url{
@@ -963,7 +963,7 @@ a.b-sale-menu-all-product__url,.b-sale-menu-subscribe__url{
 }
 
 .b-services-menu-body-types-card-title{
-	margin-top: -4px; 
+	margin-top: -4px;
 }
 
 .b-services-menu-body-types-card-description-text{
@@ -1084,7 +1084,7 @@ a.b-special-offers-all-product__url,.b-special-offers-subscribe__url{
 	width:100%;
 	width:140px;
 	height:140px;
-	
+
 }
 
 .b-info-bottom-news-preview-block-img-url,.b-info-bottom-review-preview-block-img-url{
@@ -1134,7 +1134,7 @@ a.b-special-offers-all-product__url,.b-special-offers-subscribe__url{
 }
 
 .b-info-bottom-news__preview,.b-info-bottom-review__preview{
-	margin-bottom: 28px; 
+	margin-bottom: 28px;
 }
 
 .b-info-bottom-news-preview .b-info-bottom-news-preview__block:first-child{
@@ -1355,7 +1355,7 @@ a.b-nav-menu__block-title__href-color{
 	display: flex;
 	justify-content: space-around;
 	margin:0 auto;
-	width:1000px;
+	width:970px;
 }
 
 .b-nav-menu__block-title{
@@ -1453,6 +1453,10 @@ a.b-nav-menu__block-title__href-color{
 	z-index:20;
 }
 
+.sub-menu__lvl_2-left{
+	left: -490px;
+}
+
 .sub-menu__lvl_2_0{
 	top: -25px;
 	padding-top:28px;
@@ -1491,7 +1495,10 @@ a.b-nav-menu__block-title__href-color{
 	width:175px;
 	height: 460px;
 	background-color: #af9559;
+}
 
+.card-left{
+	left: 315px;
 }
 
 .b-nav-menu__blocks > .b-nav-menu-blocks_none > li:hover > .sub-menu{
@@ -1499,6 +1506,10 @@ a.b-nav-menu__block-title__href-color{
 }
 
 .b-nav-menu__blocks > .b-nav-menu-blocks_none > li > .sub-menu > li:hover > .sub-menu__lvl_2{
+	display:block;
+}
+
+.b-nav-menu__blocks > .b-nav-menu-blocks_none > li > .sub-menu > li:hover > .sub-menu__lvl_2-left{
 	display:block;
 }
 
@@ -1620,22 +1631,22 @@ a.card-elements-text-title{
 }
 
 #modal_form {
-	width: 1000px; 
+	width: 720px;
 	height: 400px; /* Рaзмеры дoлжны быть фиксирoвaны */
 	border-radius: 25px;
 	border: 10px rgba(0,0,0,0.85) solid;
 	background: #fff;
 	position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
-	top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+	top: 50%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
 	left: 50%; /* пoлoвинa экрaнa слевa */
 	margin-top: -200px;
-	margin-left: -500px; 
+	margin-left: -380px;
 	/* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
 	display: none;
 	/* в oбычнoм сoстoянии oкнa не дoлжнo быть */
-	opacity: 0; 
+	opacity: 0;
 	/* пoлнoстью прoзрaчнo для aнимирoвaния */
-	z-index: 4; 
+	z-index: 101;
 	/* oкнo дoлжнo быть нaибoлее бoльшем слoе */
 	padding: 20px 10px;
 
@@ -1679,7 +1690,7 @@ a.card-elements-text-title{
 	font-size: 15px;
 	top: 50%;
 	margin-top: -10px;
-	z-index: 10; 
+	z-index: 10;
 	-ms-user-select: none;
 	-moz-user-select: none;
 	-webkit-user-select: none;
@@ -1694,24 +1705,24 @@ a.card-elements-text-title{
 
 
 #overlay {
-	z-index:3; 
+	z-index:100;
 	/* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
-	position:fixed; 
+	position:fixed;
 	/* всегдa перекрывaет весь сaйт */
 	background-color:#000; /* чернaя */
-	opacity:0.8; 
+	opacity:0.8;
 	/* нo немнoгo прoзрaчнa */
-	-moz-opacity:0.8; 
+	-moz-opacity:0.8;
 	/* фикс прозрачности для старых браузеров */
 	filter:alpha(opacity=80);
-	width:100%; 
-	height:100%; 
+	width:100%;
+	height:100%;
 	/* рaзмерoм вo весь экрaн */
-	top:0; 
+	top:0;
 	/* сверху и слевa 0, oбязaтельные свoйствa! */
 	left:0;
 	cursor:pointer;
-	display:none; 
+	display:none;
 	/* в oбычнoм сoстoянии её нет) */
 }
 
@@ -1729,7 +1740,7 @@ a.card-elements-text-title{
 
 
 .b-your-like{
-	width:900px;
+	width:720px;
 	height: 400px;
 	margin: 0 auto;
 }
@@ -1754,7 +1765,7 @@ a.card-elements-text-title{
 }
 
 .b-your-like__products{
-	width:900px;
+	width:720px;
 }
 
 
